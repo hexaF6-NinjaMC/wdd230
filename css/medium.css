@@ -10,4 +10,13 @@
     header, footer {
         border-radius: 10px 10px 10px 10px;
     }
+
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #self-image {
+        width: 200px;
+    }
 }

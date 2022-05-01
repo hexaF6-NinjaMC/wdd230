@@ -51,12 +51,32 @@ section div {
 
 .company {
     color: rgb(66, 65, 65);
-    margin-top: -0.5px;
+    margin: 0 auto 0 8px;   /* top right bottom left: REMEMBER THIS!!! */
+}
+
+.company-webpage {
     margin-left: 8px;
+    font-size: 20px;
+}
+
+a {
+    color: cornflowerblue;
+}
+
+a:hover, a:visited:hover {
+    color: deepskyblue;
+}
+
+a:visited {
+    color: darkmagenta;
 }
 
 .screenshot {
-    margin-left: 3px;
+    margin-top: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
 }
 
 .explanation {

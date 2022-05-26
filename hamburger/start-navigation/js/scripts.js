@@ -1,8 +1,9 @@
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
+    let temp = document.getElementsByClassName('toggler')[0];
+    temp.classList.toggle('hide');
+    if (temp.classList[1] == 'hide') {
+        document.querySelector('.toggler > a').innerHTML = "&#9776; Menu";
+    } else {
+        document.querySelector('.toggler > a').innerHTML = "&#10006; Close";
+    }
 }
-
-const x = document.getElementById('hamburgerBtn');
-
-x.onclick = toggleMenu;

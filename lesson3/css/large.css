@@ -10,11 +10,10 @@
     }
 
     a:hover {
-        color:rgb(150, 193, 196);
+        color:#96c1c4;
     }
     
-    h1 {
-        font-family: Arial, Helvetica, sans-serif;
+    .nav-link h1 {
         text-shadow: 2px 2px #999;
         font-size: 1.5rem;
         padding-right: 5px;

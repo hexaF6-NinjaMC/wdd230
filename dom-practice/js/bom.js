@@ -3,7 +3,7 @@ const fullDate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
 const currentYear = now.getFullYear();
 const author = "Aaron Bechtel";
 const locationOfAuthor = "Oklahoma";
-const footerTextContent = `${currentYear} Great Plains C.O.C. | ${author} | ${locationOfAuthor}`;
+const footerTextContent = `${currentYear} | ${author} | ${locationOfAuthor}`;
 
 let footerTextElement = document.querySelector("#footer-text");
 footerTextElement.append(footerTextContent);

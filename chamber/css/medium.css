@@ -1,0 +1,100 @@
+@media only screen and (min-width: 32.5rem) {
+    .company-headings-container {
+        font-size: 1rem;
+    }
+
+    .bottomRow {
+        margin: 0 0 2% 0;
+    }
+
+    p#header-date {
+        font-size: 2rem;
+        margin-bottom: auto; 
+    }
+
+    header {
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 1fr 0.25fr;
+    }
+
+    #spotlights {
+        grid-template-columns: auto auto;
+        grid-template-rows: none;
+        grid-gap: 1vw;
+        grid-row: 3;
+    }
+
+    #weather {
+        grid-row: 4;
+    }
+
+    .hiddenMed {
+        display: block;
+    }
+
+    #joinSection {
+        height: auto;
+    }
+
+    #joinSection #joinLink {
+        border-radius: 20px;
+        line-height: 50px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        color: #ffffff;
+        background-color: green;
+    }
+
+    #joinHeading {
+        text-align: center;
+        margin: 1% 0 0 0;
+    }
+
+    #joinSection #flavor p {
+        font-style: italic;
+        text-align: center;
+        margin: 1% auto 0 auto;
+    }
+
+    .spotlight {
+        margin: 0 0 2vh 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #hero {
+        grid-area: 1 / span 3;
+    }
+
+    #news {
+        grid-area: 2 / span 3;
+    }
+
+    #spotlights {
+        grid-area: 3 / span 3;
+    }
+
+    #joinSection {
+        grid-area: 4 / span 3;
+    }
+
+    #event {
+        grid-area: 5 / span 2;
+    }
+
+    #weather {
+        grid-area: 5 / span 1;
+    }
+
+    main section {
+        height: 20vh;
+    }
+
+    h3, li, article {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,46 @@
+@media only screen and (min-width: 75rem) {
+    .company-headings-container {
+        font-size: 1.5rem;
+    }
+
+    .bottomRow {
+        margin: 0 0 2% 0;
+    }
+
+    p#header-date {
+        font-size: 2rem;
+        margin-bottom: auto; 
+    }
+
+    header {
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 1fr 0.25fr;
+    }
+
+    #spotlights {
+        height: 40vh;
+    }
+    
+    .header-logo {
+        width: 15vw;
+    }
+
+    footer p {
+        font-size: 2rem;
+    }
+
+    .footer-logo {
+        height: 100%;
+        width: auto;
+    }
+
+    main section {
+        height: 20vh;
+    }
+
+    h3, li, article {
+        font-size: 2.5rem;
+    }
+
+    nav li a:hover {cursor: pointer; color: burlywood;}
+}

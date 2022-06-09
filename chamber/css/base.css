@@ -9,6 +9,12 @@ body {
     justify-content: center;
 }
 
+#banner {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 nav {
     background-color: rgb(62, 69, 80);
 }

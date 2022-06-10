@@ -74,18 +74,29 @@
         font-size: 2.5rem;
     }
 
-    nav ul li.toggler {
+    nav .toggler {
         display: none;
     }
 
     nav ul {
-        display: grid;
         grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
     }
 
-    nav a:hover {
+    .navigation li {
+        display: block;
+        padding: 0;
+    }
+
+    li a:hover {
+        color: burlywood;
+    }
+
+    .navigation {
+        height: fit-content;
+    }
+
+    nav li:hover {
         cursor: pointer;
         background-color: rgb(2, 2, 2);
-        color: burlywood;
     }
 }

@@ -8,6 +8,14 @@ table {
     box-shadow: 10px 10px 10px #628CA6;
 }
 
+#portal {
+    color:rgb(25, 55, 138);
+}
+
+#portal:hover {
+    color: rgb(139, 185, 199);
+}
+
 thead tr:nth-of-type(1) th {
     font-weight: bold;
     font-size: 1.5rem;

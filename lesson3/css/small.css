@@ -11,6 +11,14 @@
     margin-top: 20px;
 }
 
+#portal {
+    color:rgb(25, 55, 138);
+}
+
+#portal:hover {
+    color: rgb(139, 185, 199);
+}
+
 .primary {
     background-color: #0a5370c2;
     color: #ffffff;

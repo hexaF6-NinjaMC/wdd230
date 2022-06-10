@@ -50,8 +50,12 @@
     }
     
     .header-logo {
-        width: 15vw;
+        width: 10vw;
     }
+
+    .placeholderImg {
+        width: 5vw;
+    } 
 
     footer p {
         font-size: 2rem;
@@ -70,5 +74,18 @@
         font-size: 2.5rem;
     }
 
-    nav li a:hover {cursor: pointer; color: burlywood;}
+    nav ul li.toggler {
+        display: none;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    }
+
+    nav a:hover {
+        cursor: pointer;
+        background-color: rgb(2, 2, 2);
+        color: burlywood;
+    }
 }

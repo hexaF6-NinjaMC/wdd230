@@ -7,6 +7,7 @@ body {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    font-family: 'Nunito';
 }
 
 #banner {
@@ -15,8 +16,19 @@ body {
     justify-content: center;
 }
 
+button {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
 nav {
     background-color: rgb(62, 69, 80);
+    grid-column: 1 / span 3;
 }
 
 nav ul {
@@ -29,6 +41,7 @@ nav ul {
 }
 
 nav a {
+    display: block;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
@@ -36,10 +49,6 @@ nav a {
 
 li.active a {
     color: #96c1c4;
-}
-
-.navigation li:first-child {
-    display: block;
 }
 
 .navigation li {

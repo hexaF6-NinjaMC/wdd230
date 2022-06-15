@@ -12,6 +12,24 @@
         margin-bottom: auto; 
     }
 
+    #hero span img {
+        height: 100%;
+        position: absolute;
+    }
+
+    #hero div {
+        margin: auto;
+    }
+
+    #joinSection {
+        display: grid;
+        align-content: space-evenly;
+    }
+
+    a.joinLink:hover {
+        color: #000000;
+    }
+
     header {
         grid-template-columns: 1fr 1.5fr 1fr;
         grid-template-rows: 1fr 0.25fr;
@@ -24,6 +42,10 @@
 
     #hero {
         grid-area: 1 / 2 / 3 / 4;
+    }
+
+    #heroJoinLink.joinLink {
+        max-width: 25vw;
     }
 
     #event {
@@ -47,6 +69,15 @@
         grid-area: 1 / 4 / 4 / 5;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
+        padding-bottom: 2%;
+    }
+
+    .spotlight:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .logo {
+        max-width: 4vw;
     }
     
     .header-logo {

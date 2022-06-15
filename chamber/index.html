@@ -22,15 +22,23 @@
         <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
         <header>
             <div class="image-container topRow">
-                <a href="index.html"><img src="images/gpcLogo.png" alt="gpc-logo" class="header-logo"></a>
+                <a href="index.html"><img src="images/gpcLogo.webp" alt="gpc-logo" class="header-logo"></a>
             </div>
             <section class="company-headings-container topRow">
                 <h1 id="first-company-heading">Great Plains</h1>
                 <h2 id="second-company-heading">Chamber of Commerce</h2>
             </section>
             <div class="social-media-container topRow">
-                <a href="https://www.facebook.com/" target="_blank"><img class="logo" src="images/logos/f_logo_RGB-Blue_58.png" alt="facebook-logo" id="facebook-icon"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img class="logo" src="images/logos/LI-In-Bug.png" alt="linkdin-logo" id="linkedin-icon"></a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <picture>
+                        <img class="logo" src="images/logos/f_logo_RGB-Blue_58.png" alt="facebook-logo" id="facebook-icon">
+                    </picture>
+                    </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <picture>
+                        <img class="logo" src="images/logos/In-White-72-Γö¼┬½.png" alt="linkdin-logo" id="linkedin-icon">
+                    </picture>
+                </a>
             </div>
             <div class="header-date-container bottomRow">
                 <p id="header-date"></p>
@@ -48,36 +56,62 @@
 
         <main>
             <section id="hero">
-                <h3>Welcome to the Great Plains!</h3>
-                <img src="images/pexels-greengrey-darya-10150981.jpg" alt="background image">
-                <button id="joinImgBtn">Join GPC!</button>
+                <span>
+                    <img src="https://via.placeholder.com/150x60" alt="background image" id="heroImg">
+                </span>
+                <div>
+                    <h3>Welcome to the Great Plains!</h3>
+                    <a class="joinLink" id="heroJoinLink" href="join.html"><h3>Join GPC!</h3></a>  
+                </div>
+                
             </section>
 
-            <section id="event">
-                <h3>Event</h3>
+            <section id="event" class="content">
+                <h3 id="eventTitle">Ribbon Cutting</h3>
+                <h4 id="eventHeader">Welcome, Ranch-boys!</h4>
+                <p>Join us for the grand opening of Ranch-boys, a vegan burger joint, at 1:00 p.m. <a href="#" class="moreInfo">more info...</a></p>
+                <img src="images/NicePng_ribbon-cutting-png_1216611.png" alt="scissors cutting red ribbon">
             </section>
 
-            <section id="weather">
+            <section id="weather" class="content">
                 <h3>Weather</h3>
+                <div id="chart">
+                    <div id="weatherDetails">
+                        <img src="images/icons8-partly-cloudy-day-50.png" alt="partly cloudy">
+                        <h3><span>33</span>&deg;C</h3>
+                        <h4>Partly Cloudy</h4> 
+                    </div>
+                    
+                    <hr>
+                    <div id="weatherData">
+                        <p>Wind Speed: &emsp; <span>2.5</span> km/h</p>
+                        <p>Wind Chill: &emsp; N/A</p> 
+                    </div>
+                </div>
+                
+                
             </section>
 
-            <section id="news">
+            <section id="news" class="content">
                 <h3>News Release</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis eget velit. In fermentum posuere urna nec tincidunt. Iaculis urna id volutpat lacus laoreet. Morbi quis commodo odio aenean sed adipiscing diam donec. Viverra vitae congue eu consequat ac felis donec. Nunc consequat interdum varius sit amet mattis vulputate. Quam quisque id diam vel quam. Arcu dictum varius duis at consectetur lorem donec massa sapien. Accumsan sit amet nulla facilisi morbi tempus. Suspendisse sed nisi lacus sed viverra tellus in hac habitasse. Nunc mattis enim ut tellus. Suspendisse faucibus interdum posuere lorem. Iaculis eu non diam phasellus vestibulum.
+                </p>
             </section>
             
-            <section id="spotlights">
+            <section id="spotlights" class="content">
                 <article class="spotlight">
-                    Spotlight 1...
+                    <h3>Happy Movers</h3>
+                    <p>Happy Movers Co. is a proud and reliable moving company, whether you have a piano, washer or dryer that needs liftin' and gettin' to your new home!</p>
                 </article>
                 <article class="spotlight">
-                    Spotlight 2...
+                    <h3>Happy Hour</h3>
+                    <p>Everyone loves a happy hour, so why not get in on those convenient savings? Businesses include all Del Rancho, Braum's and Sonic locations.</p>
                 </article>
             </section>
 
-            <section class="hiddenMed" id="joinSection">
-                <div id="joinLink">
-                    <a href="./join.html"><h3 id="joinHeading">Join Us!</h3></a>
-                </div>
+            <section class="hiddenMed content" id="joinSection">
+                <a class="joinLink" href="join.html"><h3>Join Us!</h3></a>
                 <div id="flavor">
                     <p>Discover how to join the chamber of commerce and what your membership will benefit you!</p>
                 </div>
@@ -86,7 +120,7 @@
 
         <footer>
             <section>
-                <img src="images/gpcLogo.png" alt="gpc-logo" class="footer-logo">
+                <img src="images/gpcLogo.webp" alt="gpc-logo" class="footer-logo">
             </section>
             
             <section>

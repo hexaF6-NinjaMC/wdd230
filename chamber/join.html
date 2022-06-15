@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home | Great Plains Chamber of Commerce</title>
+        <title>Join Us! | Great Plains Chamber of Commerce</title>
         <meta charset="UTF-8">
         <meta name="author" content="Aaron Bechtel">
         <meta name="description" content="Chamber of Commerce Join page for Aaron Bechtel in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/large.css">
         <link rel="shortcut icon" href="images/favicon.ico">
         <script src="js/index.js" defer></script>
+        <script src="js/joinPage.js" defer></script>
         <script src="js/hamburger.js"></script>
     </head>
 
@@ -22,7 +23,7 @@
         <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
         <header>
             <div class="image-container topRow">
-                <a href="index.html"><img src="images/gpcLogo.png" alt="gpc-logo" class="header-logo"></a>
+                <a href="index.html"><img src="images/gpcLogo.webp" alt="gpc-logo" class="header-logo"></a>
             </div>
             <section class="company-headings-container topRow">
                 <h1 id="first-company-heading">Great Plains</h1>
@@ -30,7 +31,7 @@
             </section>
             <div class="social-media-container topRow">
                 <a href="https://www.facebook.com/" target="_blank"><img class="logo" src="images/logos/f_logo_RGB-Blue_58.png" alt="facebook-logo" id="facebook-icon"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img class="logo" src="images/logos/LI-In-Bug.png" alt="linkdin-logo" id="linkedin-icon"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img class="logo" src="images/logos/In-White-72-Γö¼┬½.png" alt="linkdin-logo" id="linkedin-icon"></a>
             </div>
             <div class="header-date-container bottomRow">
                 <p id="header-date"></p>
@@ -47,12 +48,34 @@
         </header>
 
         <main>
-            ...
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>First Name*: <input type="text" name="fname" required placholder="John"></label>
+                    <label>Last Name*: <input type="text" name="lname" required placeholder="Smith"></label>
+                    <label>Position Title: <input type="text" name="title" pattern="[A-Za-z\-*\s*]{7,}" placeholder="My title - I"></label>
+                    <label>Email*: <input type="email" placeholder="myemail@domain.ext"></label>
+                    <label>Cell Phone*: <input type="tel" placeholder="4445556678 or 14445556678" minlength="9" maxlength="10"></label>
+                    <label>Business Name*: <input type="text" required placeholder="My Business name"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Memebrship Level*:</legend>
+                    <label><input type="radio" name="membership" value="nonProfit" required> NP Membership</label>
+                    <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                </fieldset>
+                <label>Describe your business: <textarea name="description"></textarea></label>
+                <div class="hiddenDate">
+                    <p></p>
+                </div>
+                <input type="submit" value="Click to Join">
+            </form>
         </main>
         
         <footer>
             <section>
-                <img src="images/gpcLogo.png" alt="gpc-logo" class="footer-logo">
+                <img src="images/gpcLogo.webp" alt="gpc-logo" class="footer-logo">
             </section>
             
             <section>

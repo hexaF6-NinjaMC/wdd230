@@ -18,14 +18,14 @@
     }
 
     #spotlights {
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-template-rows: none;
         grid-gap: 1vw;
         grid-row: 3;
     }
 
-    #weather {
-        grid-row: 4;
+    #hero div h3, #hero div a {
+        font-size: 2.5rem;
     }
 
     .hiddenMed {
@@ -36,19 +36,15 @@
         height: auto;
     }
 
-    #joinSection #joinLink {
-        border-radius: 20px;
-        line-height: 50px;
-        width: 90%;
+    #joinSection .joinLink {
         margin-left: auto;
         margin-right: auto;
-        color: #ffffff;
-        background-color: green;
     }
 
-    #joinHeading {
+    .joinLink a {
         text-align: center;
-        margin: 1% 0 0 0;
+        color: white;
+        margin: 0;
     }
 
     #joinSection #flavor p {
@@ -90,8 +86,11 @@
         grid-area: 5 / span 1;
     }
 
-    main section {
-        height: 20vh;
+    #weather hr {
+        font-size: 2rem;
+        width: 100%;
+        margin: 0;
+        align-items: center;
     }
 
     h3, li, article {

@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/large.css">
         <link rel="shortcut icon" href="images/favicon.ico">
         <script src="js/index.js" defer></script>
+        <script src="js/windchill.js" defer></script>
         <script src="js/hamburger.js"></script>
     </head>
 
@@ -56,10 +57,14 @@
 
         <main>
             <section id="hero">
-                <span>
-                    <img src="https://via.placeholder.com/150x60" alt="background image" id="heroImg">
-                </span>
+                
                 <div>
+                    <picture>
+                        <source media="(max-width: 31rem)" srcset="images/wdd230-orgSMALL.webp">
+                        <source media="(max-width: 60rem)" srcset="images/wdd230-orgMEDIUM-2.webp">
+                        <source media="(max-width: 74rem)" srcset="images/wdd230-orgLARGE-2.webp">
+                        <img src="images/wdd230-orgLARGE.webp" alt="background image" id="heroImg">
+                    </picture>
                     <h3>Welcome to the Great Plains!</h3>
                     <a class="joinLink" id="heroJoinLink" href="join.html"><h3>Join GPC!</h3></a>  
                 </div>
@@ -70,7 +75,7 @@
                 <h3 id="eventTitle">Ribbon Cutting</h3>
                 <h4 id="eventHeader">Welcome, Ranch-boys!</h4>
                 <p>Join us for the grand opening of Ranch-boys, a vegan burger joint, at 1:00 p.m. <a href="#" class="moreInfo">more info...</a></p>
-                <img src="images/NicePng_ribbon-cutting-png_1216611.png" alt="scissors cutting red ribbon">
+                <img src="images/NicePng_ribbon-cutting-png_1216611.webp" alt="scissors cutting red ribbon">
             </section>
 
             <section id="weather" class="content">
@@ -78,14 +83,14 @@
                 <div id="chart">
                     <div id="weatherDetails">
                         <img src="images/icons8-partly-cloudy-day-50.png" alt="partly cloudy">
-                        <h3><span>33</span>&deg;C</h3>
+                        <h3><span id="temperature">33</span>&deg;C</h3>
                         <h4>Partly Cloudy</h4> 
                     </div>
                     
                     <hr>
                     <div id="weatherData">
-                        <p>Wind Speed: &emsp; <span>2.5</span> km/h</p>
-                        <p>Wind Chill: &emsp; N/A</p> 
+                        <p>Wind Speed: &emsp; <span id="windSpeedKMH">2.5</span> km/h</p>
+                        <p>Wind Chill: &emsp; <span id="windChillFactor"></span></p> 
                     </div>
                 </div>
                 

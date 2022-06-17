@@ -143,22 +143,27 @@ main section {
     position: relative;
 }
 
-#hero span img {
-    display: block;
+#hero picture img {
     width: 100%;
+}
+
+#hero picture {
+    grid-row: 1 / 2;
+    grid-column: 1;
 }
 
 #hero div {
     display: grid;
-    grid-template-rows: auto auto;
-    margin-top: -40%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    top: 0;
     width: 100%;
     height: 100%;
-    position: absolute;
 }
 
 #hero div h3 {
-    grid-row: 1;
+    grid-row: 1 / 2;
+    grid-column: 1;
     padding: 2% 0 0 2%;
 }
 
@@ -167,7 +172,7 @@ main section {
 }
 
 #hero div a {
-    grid-row: 2;
+    grid-row: 1;
 }
 
 #event img {
@@ -253,6 +258,8 @@ footer section:first-of-type {
 
 #heroJoinLink {
     display: block;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
     max-width: 45vw;
     font-size: 1.5rem;
     justify-self: right;
@@ -262,4 +269,11 @@ footer section:first-of-type {
 
 h3, h4 {
     margin: 0;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
 }

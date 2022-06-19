@@ -49,28 +49,56 @@
 
         <main>
             <form method="get" action="thankyou.html">
-                <fieldset>
+                <fieldset class="top">
                     <legend>Contact Information</legend>
-                    <label>First Name*: <input type="text" name="fname" required placholder="John"></label>
+                    <label>First Name*: <input type="text" name="fname" required placeholder="John"></label>
                     <label>Last Name*: <input type="text" name="lname" required placeholder="Smith"></label>
                     <label>Position Title: <input type="text" name="title" pattern="[A-Za-z\-*\s*]{7,}" placeholder="My title - I"></label>
-                    <label>Email*: <input type="email" placeholder="myemail@domain.ext"></label>
-                    <label>Cell Phone*: <input type="tel" placeholder="4445556678 or 14445556678" minlength="9" maxlength="10"></label>
+                    <label>Email*: <input type="email" placeholder="myemail@domain.ext" required></label>
+                    <label>Cell Phone*: <input type="tel" placeholder="4445556678 or 14445556678" minlength="9" maxlength="10" required></label>
                     <label>Business Name*: <input type="text" required placeholder="My Business name"></label>
                 </fieldset>
-                <fieldset>
-                    <legend>Memebrship Level*:</legend>
+                <fieldset class="middle">
+                    <legend>Membership Level*:</legend>
                     <label><input type="radio" name="membership" value="nonProfit" required> NP Membership</label>
                     <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
                     <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
                     <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
                 </fieldset>
-                <label>Describe your business: <textarea name="description"></textarea></label>
+                <fieldset class="bottom">
+                    <label>Describe your business: <textarea name="description"></textarea></label>
+                </fieldset>
+                
                 <div class="hiddenDate">
                     <p></p>
                 </div>
-                <input type="submit" value="Click to Join">
+                <input type="submit" value="Click to Join" id="submitBtn">
             </form>
+
+            <div id="membershipDescription">
+                <h3>Membership Tiers & Benefits:</h3>
+                <ul>
+                    <li>
+                        <h4>Non-profit (NP)</h4>
+                        <p>This membership has no additional benefits, as it is free. You have all the free perks, like 1 base vote on Chamber decisions, 5% off Tuesdays at select event businesses, and others.</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h4>Bronze - $50.00 monthly, or $575.00 annually</h4>
+                        <p>The Bronze membership tier has all the base (NP) benefits, yet more savings (5% on Tuesdays AND Thursdays) and votes (+1)!</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h4>Silver - $75.00 monthly, or $875.00 annually</h4>
+                        <p>With the Silver membership tier, you get access to our spotlights, plus lower-tier benefits! Each week, get showcased once on either Monday, Wednesday, or Friday to reach more customers! (Gold Tier memberships have priority.)</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h4>Gold - $100.00 monthly, or $1,175.00 annually</h4>
+                        <p>At the highest tier, Gold members have all the perks as lower-tiers, a total of three (3) votes per decision, and 4 days in the spotlight! Members also have a 15% discount at participating businesses, <em>EVERY MONDAY, WEDNESDAY, and FRIDAY!</em></p>
+                    </li>
+                </ul>
+            </div>
         </main>
         
         <footer>

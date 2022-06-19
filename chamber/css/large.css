@@ -42,7 +42,7 @@
     
     main {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
     }
 
     #hero {
@@ -55,6 +55,10 @@
 
     #event {
         grid-area: 1 / 1 / 2 / 2;
+    }
+
+    #eventImg {
+        display: block;
     }
 
     #weather {
@@ -134,5 +138,33 @@
     nav li:hover {
         cursor: pointer;
         background-color: rgb(2, 2, 2);
+    }
+
+    #membershipDescription {
+        display: block;
+        grid-column: -3;
+        background-color: #FEEBA6;
+        grid-column-end: -1;
+        border: 1px solid rgb(68, 68, 68);
+        padding: 1rem;
+    }
+
+    #membershipDescription p, #membershipDescription h3, #membershipDescription h4 {
+        font-size: 1.5rem;
+    }
+    
+    #membershipDescription hr {
+        color: rgb(68, 68, 68);
+        background-color:rgb(68, 68, 68);
+        height: 0.25rem;
+        border: none;
+    }
+
+    .moreInfo:hover {
+        color:rgb(49, 46, 46);
+    }
+
+    .locationMap:hover {
+        color: #ffff00;
     }
 }

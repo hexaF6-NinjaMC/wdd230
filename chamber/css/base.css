@@ -11,9 +11,73 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+#headingThankYou {
+    display: block;
+    grid-area: 1 / span 4;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
 a {
     text-decoration: none;
-    color: #ffffff;
+}
+
+.moreInfo {
+    color: rgb(69, 122, 201);
+}
+
+.locationMap {
+    color: #d6f13b;
+}
+
+fieldset legend {
+    color: rgb(68, 91, 169);
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+li p em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+fieldset label {
+    display: block;
+    padding-top: 1rem;
+    color: rgb(42, 49, 44);
+    font-size: 0.8rem;
+}
+
+.top label input, .bottom label textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #555;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color:rgb(212, 212, 212);
+    width: 94%;
+    max-width: 20rem;
+}
+
+.top label input:required {
+    border-left: red solid 5px;
+}
+
+.top label input:required:valid {
+    border-left: green solid 5px;
+}
+
+#submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 94%;
+    max-width: 20rem;
 }
 
 #banner {
@@ -21,6 +85,14 @@ a {
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+#eventImg {
+    display: none;
+}
+
+#membershipDescription {
+    display: none;
 }
 
 main section.content {

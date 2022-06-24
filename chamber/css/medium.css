@@ -92,6 +92,23 @@
         margin: 0;
         align-items: center;
     }
+    
+    #visitDaysBanner {
+        grid-column: 1 / span 3;
+    }
+
+    #discoverStatsSection {
+        grid-column: 1 / span 2;
+        margin-right: 1rem;
+    }
+
+    #discoverImgContainer {
+        grid-column: -2;
+        grid-template-rows: auto repeat(5, 1fr);
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        grid-gap: 0.5rem;
+    }
 
     h3, li, article {
         font-size: 1.5rem;

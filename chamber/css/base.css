@@ -130,8 +130,9 @@ nav a {
     color: #ffffff;
 }
 
-li.active a {
+li.active {
     color: #96c1c4;
+    font-weight: bold;
 }
 
 .navigation li {
@@ -297,6 +298,24 @@ hr {
     border: 2px solid rgb(62, 69, 80);
     height: 100%;
     padding: 0 2%;
+}
+
+#discoverMain {
+    background-color: #FEEBA6;
+    border: 5px solid #2e2a2a;
+}
+
+#discoverImgContainer {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+#discoverImgContainer img {
+    width: 100%;
+}
+
+.discoverImg {
+    display: block;
 }
 
 footer {

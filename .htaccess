@@ -1,5 +1,4 @@
 # .htaccess tutorial
 # Assignment portal directory
 
-Options -Indexes
-IndexOptions FancyIndexing
+Options +Indexes

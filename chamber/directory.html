@@ -16,6 +16,7 @@
         <link rel="shortcut icon" href="images/favicon.ico">
         <script src="js/index.js" defer></script>
         <script src="js/hamburger.js"></script>
+        <script src="js/directory.js" defer></script>
     </head>
 
     <body>
@@ -55,8 +56,12 @@
             </nav>
         </header>
 
-        <main>
-            ...
+        <main id="directoryMain">
+            <div id="viewButtons">
+                <button id="grid" onclick="gridView()">Grid View</button>
+                <button id="list" onclick="listView()">List View</button>
+            </div>
+            <div class="businessCards"></div>
         </main>
         
         <footer>

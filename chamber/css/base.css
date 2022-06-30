@@ -1,7 +1,7 @@
 body {
     display: grid;
-    width: 100vw;
     max-width: 100%;
+    min-width: 250px;
     grid-template-columns: 95%;
     grid-template-rows: auto auto auto;
     grid-gap: 1%;
@@ -218,6 +218,44 @@ main section {
     position: relative;
 }
 
+#directoryMain .businessCards {
+    /* Default */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2%;
+}
+
+#directoryMain section {
+    height: 95%;
+    min-width: 160px;
+    text-align: center;
+}
+
+#directoryMain .list {
+    /* List Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#directoryMain .grid {
+    /* Grid Layout */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: center;
+}
+
+#directoryMain .grid section {
+    flex-direction: column;
+    text-align: center;
+    min-width: 220px;
+}
+
 #hero picture img {
     width: 100%;
 }
@@ -271,8 +309,27 @@ main section {
     height: 100%;
 }
 
+#directoryMain:first-child {
+    flex-direction: column;
+}
+
+#directoryMain {
+    display: flex;
+    flex-direction: column;
+}
+
 #weather hr, #weather p {
     margin: 1% 0;
+}
+
+#directoryMain #viewButtons {
+    margin: 0 auto;
+}
+
+#directoryMain button {
+    /* Reset styles of these buttons for directory page only */
+    all: revert;
+    text-align: center;
 }
 
 hr {

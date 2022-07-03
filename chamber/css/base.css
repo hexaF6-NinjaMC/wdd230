@@ -199,6 +199,10 @@ div.image-container {
     margin: 10%;
 }
 
+.anchor {
+    color: lightgray;
+}
+
 main {
     grid-row: 3;
     height: auto;

@@ -35,6 +35,10 @@
         color: #000000;
     }
 
+    .anchor:hover {
+        color: rgb(255, 255, 255);
+    }
+
     header {
         grid-template-columns: 1fr 1.5fr 1fr;
         grid-template-rows: 1fr 0.25fr;

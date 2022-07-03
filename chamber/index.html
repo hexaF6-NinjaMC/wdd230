@@ -17,6 +17,7 @@
         <script src="js/index.js" defer></script>
         <script src="js/windchill.js" defer></script>
         <script src="js/hamburger.js"></script>
+        <script src="js/weatherapi2.js" defer></script>
     </head>
 
     <body>
@@ -58,7 +59,6 @@
 
         <main>
             <section id="hero">
-                
                 <div>
                     <picture>
                         <source media="(max-width: 31rem)" srcset="images/wdd230-orgSMALL.webp">
@@ -69,7 +69,6 @@
                     <h3>Welcome to the Great Plains!</h3>
                     <a class="joinLink" id="heroJoinLink" href="join.html"><h3>Join GPC!</h3></a>  
                 </div>
-                
             </section>
 
             <section id="event" class="content">
@@ -87,19 +86,20 @@
                 <h3>Weather</h3>
                 <div id="chart">
                     <div id="weatherDetails">
-                        <img src="images/icons8-partly-cloudy-day-50.png" alt="partly cloudy">
-                        <h3><span id="temperature">33</span>&deg;C</h3>
-                        <h4>Partly Cloudy</h4> 
+                        <figure>
+                            <img src="" alt="" id="weather-icon">
+                            <h3><span id="current-temp"></span>&deg;F</h3>
+                            <figcaption></figcaption>
+                        </figure>
                     </div>
                     
                     <hr>
+
                     <div id="weatherData">
-                        <p>Wind Speed: &emsp; <span id="windSpeedKMH">2.5</span> km/h</p>
+                        <p>Wind Speed: &emsp; <span id="windSpeedMPH"></span>mph</p>
                         <p>Wind Chill: &emsp; <span id="windChillFactor"></span></p> 
                     </div>
                 </div>
-                
-                
             </section>
 
             <section id="news" class="content">
@@ -137,6 +137,7 @@
                 <p id="footer-text">&copy; </p>
                 <p id="last-update">WDD 230 Project | Last updated: </p>
                 <p>info@greatplainschamber.com<br>+1 (123) 888-7766 | <a class="locationMap" href="#">Location Map</a></p>
+                <p>API use courtesy of <a class="anchor" href="https://openweathermap.org/">OpenWeatherMap</a></p>
             </section>
         </footer>
     </body>

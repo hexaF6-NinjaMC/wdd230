@@ -1,60 +1,114 @@
-body {
-    font-family: "Noto Serif", serif;
-    max-width: 100vw;
-    min-width: 270px;
-}
+/* IDs */
+    #weather-alert {
+        background-color: burlywood;
+        text-align: center;
+    }
 
-header img#logo-img {
-    width: 25vw;
-    grid-area: 1 / 1 / span 1;
-}
+    #header-top {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+    }
 
-header h1, header h2 {
-    font-family: "Dancing Script", cursive;
-    color: whitesmoke;
-    text-align: center;
-    display: block;
-    margin: 0;
-    font-size: 1.1rem;
-}
+    #contact-link {
+        color: #e0e400;
+    }
 
-hr {
-    max-width: 90vw;
-}
+    #content {
+        transition: margin-left 0.5s;
+        position: relative;
+        width: 100vw;
+    }
 
-main {
-    max-width: 96vw;
-    padding: 2vw;
-}
+/* Classes */
+    .navigation {
+        list-style: none;
+        display: grid;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
 
-#weather-alert {
-    background-color: burlywood;
-    text-align: center;
-}
+    .closeBtn {
+        background-color: transparent;
+    }
 
-.closeBtn {
-    background-color: transparent;
-    border: none;
-}
+    .header-middle {
+        background-color: #776439;
+    }
 
-#header-top {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-}
+    .header-right {
+        display: flex;
+        align-items: center; 
+        background-color: #C0A840;
+    }
 
-.header-middle {
-    background-color: #776439;
-}
+    .facebook {
+        margin-left: 2vw;
+    }
 
-.header-right {
-    display: flex;
-    align-items: center; 
-}
+    .linkedin {
+        margin: 0 2vw;
+    }
 
-#header-bottom {
-    display: none;
-}
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        background-color: goldenrod;
+    }
 
-header .social img {
-    max-width: 10vw;
-}
+/* Elements */
+    body {
+        font-family: "Noto Serif", serif;
+        max-width: 100vw;
+        min-width: 270px;
+        background-color: rgba(252, 228, 19, 0.363);
+    }
+
+    header img#logo-img {
+        width: 25vw;
+        grid-area: 1 / 1 / span 1;
+    }
+
+    header h1, header h2 {
+        font-family: "Dancing Script", cursive;
+        color: whitesmoke;
+        text-align: center;
+        display: block;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    hr {
+        max-width: 90vw;
+    }
+
+    main {
+        max-width: 96vw;
+        padding: 2vw;
+        transition: margin-left 0.5s;
+    }
+
+    header .social img {
+        max-width: 10vw;
+    }
+
+    footer {
+        background-color: #776439;
+        color: whitesmoke;
+    }
+
+    footer hr {
+        display: block;
+    }
+
+    footer a {
+        color: whitesmoke;
+        text-decoration: none;
+    }

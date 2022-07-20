@@ -2,6 +2,7 @@
     "temples": [
         {
             "name": "Anchorage Temple",
+            "image": "images/temples/anchorage_alaska_temple_lds.webp",
             "address": "13161 Brayton Drive, Anchorage, Alaska, 99516 U.S.A.",
             "telephone": "(+1) 907-348-7890",
             "services": {
@@ -31,11 +32,13 @@
                         "Monday, 18 Sept 2023 - Monday, 2 Oct 2023"
                     ]
                 }
-            }
+            },
+            "featured": "yes"
         },
         
         {
             "name": "Oakland Temple",
+            "image": "images/temples/oakland_california_temple_exterior.webp",
             "address": "4770 Lincoln Avenue, Oakland, California, 94602-2535 U.S.A.",
             "telephone": "(+1) 510-531-3200",
             "services": {
@@ -70,11 +73,13 @@
                         "Thursday, 23 Nov 2023"
                     ]
                 }
-            }
+            },
+            "featured": "yes"
         },
 
         {
             "name": "Palmyra Temple",
+            "image": "images/temples/palmyra_temple_lds.webp",
             "address": "2720 Temple Road, Palmyra, New York, 14522-9573 U.S.A.",
             "telephone": "(+1) 315-597-6001",
             "services": {
@@ -103,11 +108,13 @@
                         "Monday, 11 Sept 2023 - Monday, 25 Sept 2023"
                     ]
                 }
-            }
+            },
+            "featured": "yes"
         },
 
         {
             "name": "Fort Collins Temple",
+            "image": "images/temples/fort_collins_colorado_temple_sunset_exterior.webp",
             "address": "2180 Majestic Drive, Fort Collins, Colorado, 80528 U.S.A.",
             "telephone": "(+1) 970-797-4630",
             "services": {
@@ -138,7 +145,8 @@
                         "Monday, 14 Aug 2023 - Monday, 28 Aug 2023"
                     ]
                 }
-            }
+            },
+            "featured": "yes"
         }
     ]
 }

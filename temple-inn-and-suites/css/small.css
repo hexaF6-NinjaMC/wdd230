@@ -19,6 +19,51 @@
         width: 100vw;
     }
 
+    #call-to-action {
+        max-height: 24vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #call-to-action picture {
+        grid-row: 1 / 2;
+        grid-column-start: 1;
+        max-height: inherit;
+    }
+
+    #banner-img {
+        width: 100%;
+        max-height: inherit;
+        object-fit: cover;
+    }
+
+    #call-to-action div h3 {
+        text-shadow: 1px 1px 1px rgb(111, 134, 7);
+        color: rgb(255, 251, 1);
+        margin: 1%;
+    }
+
+    #call-to-action div {
+        display: flex;
+        flex-direction: column;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        margin-left: 3%;
+    }
+
+    #call-to-action div p {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto -3% 0.5rem -3%;
+        color: white;
+        background-color:rgba(252, 228, 19, 0.363);
+    }
+
+    #featured-temple {
+        width: 100%;
+    }
+
 /* Classes */
     .navigation {
         list-style: none;
@@ -28,12 +73,31 @@
         text-align: center;
     }
 
-    .closeBtn {
+    .navigation li {
+        padding: 1vh 0;
+        border: 1px dotted black;
+    }
+
+    .navigation, .navigation li {
+        display: block;
+        width: inherit;
+    }
+
+    .navigation li a {
+        color: whitesmoke;
+    }
+
+    .closeBtn, .toggler {
         background-color: transparent;
+        border: none;
     }
 
     .header-middle {
         background-color: #776439;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .header-right {
@@ -76,8 +140,11 @@
         grid-area: 1 / 1 / span 1;
     }
 
-    header h1, header h2 {
+    header h1, header h2, h3 {
         font-family: "Dancing Script", cursive;
+    }
+
+    header h1, header h2 {
         color: whitesmoke;
         text-align: center;
         display: block;
@@ -87,6 +154,10 @@
 
     hr {
         max-width: 90vw;
+        background-color: black;
+        height: 1px;
+        border: 1px solid black;
+        border-radius: 2%;
     }
 
     main {
@@ -99,16 +170,27 @@
         max-width: 10vw;
     }
 
+    main section {
+        border: 1px dotted #776439;
+        padding: 2vw;
+    }
+
     footer {
+        display: grid;
         background-color: #776439;
         color: whitesmoke;
+        text-align: center;
     }
 
     footer hr {
         display: block;
+        background-color: white;
+        height: 1px;
+        border: 1px solid white;
+        width: 90vw;
     }
 
     footer a {
-        color: whitesmoke;
+        color: rgb(217, 247, 255);
         text-decoration: none;
     }

@@ -14,7 +14,8 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/small.css" rel="stylesheet">
         <script src="js/sidebar.js"></script>
-        <script src="js/alert.js"></script>
+        <script src="js/temple-cards.js" defer></script>
+        <script src="js/likes.js" defer></script>
     </head>
 
     <body>
@@ -29,7 +30,6 @@
             </nav>
         </div>
         <div id="content">
-            <div id="weather-alert">Weather Alert: <button class="closeBtn" onclick="closeAlert()">&#10060;</button></div> <!-- &#10060; = close red X -->
             <header>
                 <div id="header-top">
                     <img id="logo-img" src="images/logos/tis850x850.webp" class="header-left">
@@ -45,29 +45,9 @@
                 <hr>
             </header>
 
-            <main>
-                <!-- Content Changes -->
+            <main id="temple-cards">
                 <button class="toggler" onclick=openSidebar()><span>&#9776; &#8921;</span></button>
-                <section>
-                    <h3>Call to Action</h3>
-                    <p>Make a Reservation Today! <a href="reservations.html">Book Now!</a></p>
-                </section>
-                
-                <section>
-                    <h3>Contact Information</h3>
-                    <ul>
-                        <li>Phone: <a href="tel:19999999999">+1 (999) 999-9999</a></li>
-                        <li>Email: <a href="mailto:businq@tis.com">businq@tis.com</a></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>Summary Information of Selected Temple</h3>
-                </section>
-
-                <section>
-                    <h3>Current Weather Card</h3>
-                </section>
+                <!-- Content Changes -->
             </main>
 
             <footer>

@@ -18,6 +18,7 @@
         <script src="js/sidebar.js"></script>
         <script src="js/alert.js"></script>
         <script src="js/temple-feature.js" defer></script>
+        <script src="js/weather-api.js" defer></script>
     </head>
 
     <body>
@@ -32,7 +33,7 @@
             </nav>
         </div>
         <div id="content">
-            <div id="weather-alert">Weather Alert: <button class="closeBtn" onclick="closeAlert()">&#10060;</button></div> <!-- &#10060; = close red X -->
+            <div id="weather-alert"></div> <!-- &#10060; = close red X -->
             <header>
                 <div id="header-top">
                     <img id="logo-img" src="images/logos/tis850x850.webp" class="header-left" alt="Temple Inn and Suites logo">
@@ -73,8 +74,12 @@
                 <section id="featured">
                 </section>
 
-                <section>
-                    <h4>Current Weather Card</h4>
+                <section id="weather">
+                    <figure>
+                        <h4 id="current-temp"></h4>
+                        <img src="" alt="" id="weather-icon">
+                        <figcaption></figcaption>
+                    </figure>
                 </section>
             </main>
 

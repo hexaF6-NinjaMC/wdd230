@@ -14,7 +14,6 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/small.css" rel="stylesheet">
         <script src="js/sidebar.js"></script>
-        <script src="js/alert.js"></script>
     </head>
 
     <body>
@@ -29,7 +28,6 @@
             </nav>
         </div>
         <div id="content">
-            <div id="weather-alert">Weather Alert: <button class="closeBtn" onclick="closeAlert()">&#10060;</button></div> <!-- &#10060; = close red X -->
             <header>
                 <div id="header-top">
                     <img id="logo-img" src="images/logos/tis850x850.webp" class="header-left">
@@ -49,24 +47,38 @@
                 <!-- Content Changes -->
                 <button class="toggler" onclick=openSidebar()><span>&#9776; &#8921;</span></button>
                 <section>
-                    <h3>Call to Action</h3>
-                    <p>Make a Reservation Today! <a href="reservations.html">Book Now!</a></p>
-                </section>
-            
-                <section>
-                    <h3>Contact Information</h3>
-                    <ul>
-                        <li>Phone: <a href="tel:19999999999">+1 (999) 999-9999</a></li>
-                        <li>Email: <a href="mailto:businq@tis.com">businq@tis.com</a></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>Summary Information of Selected Temple</h3>
-                </section>
-
-                <section>
-                    <h3>Current Weather Card</h3>
+                    <form method="get" action="contacted.html">
+                        <fieldset class="top">
+                            <legend>Contact Information</legend>
+                            <label>First Name*: <input type="text" name="fname" required placeholder="John"></label>
+                            <label>Last Name*: <input type="text" name="lname" required placeholder="Smith"></label>
+                            <label>Email*: <input type="email" placeholder="myemail@domain.ext" required></label>
+                            <label>Cell Phone*: <input type="tel" placeholder="4445556678 or 14445556678" minlength="9" maxlength="10" required></label>
+                            <label>Country*: <input type="text" name="country" placeholder="United States" required></label>
+                            <label>Location to Visit*: <select placeholder="Select location" required>
+                                <option value="anchorage">Anchorage</option>
+                                <option value="oakland">Oakland</option>
+                                <option value="palmyra">Palmyra</option>
+                                <option value="fort-collins">Fort Collins</option>
+                            </select>
+                            </label>
+                        </fieldset>
+                        <fieldset class="middle">
+                            <legend>Room Size*:</legend>
+                            <label><input type="radio" name="size" value="individual" required> Single (individual)</label>
+                            <label><input type="radio" name="size" value="couple"> Couple</label>
+                            <label><input type="radio" name="size" value="triple"> 3-member Family</label>
+                            <label><input type="radio" name="size" value="quadruple"> 4-member Family</label>
+                        </fieldset>
+                        <fieldset class="bottom">
+                            <label>Additional requests: <textarea name="description"></textarea></label>
+                        </fieldset>
+                        
+                        <div class="hiddenDate">
+                            <p></p>
+                        </div>
+                        <input type="submit" value="Click to Submit" id="submitBtn">
+                    </form>
                 </section>
             </main>
 
